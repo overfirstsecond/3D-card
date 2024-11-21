@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"
+    <title></title>      
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+
+    <div class="card blue" data-tilt>
+        <div class="product">
+            <span class="number">01</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">$39.99</span>
+            <img src="image/pngwing.com.png">
+        </div>
+        <div class="title">
+            <h2>Nike Blue</h2>
+        </div>
+    </div>
+    
+    <div class="card purple" data-tilt>
+        <div class="product">
+            <span class="number">02</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">$49.99</span>
+            <img src="image/shoe-transparent-background-12.png">
+        </div>
+        <div class="title">
+            <h2>Nike Purple</h2>
+        </div>
+    </div>
+
+    <script src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 5000,
+        });
+    </script>
+
+</body>
+</html>
